@@ -3,12 +3,15 @@
         <h5 class="card-title text-center">No hay citas para mostrar</h5>
     </div>
 </div>
-<div *ngFor="let Lista of listadoCitas; let i=index" class="card mb-2">
-    <div class="card-body">
-        <p class="card-text"><span>nombre: </span>{{Lista.nombre}}</p>
-        <p class="card-text"><span>Fecha: </span>{{Lista.fecha}}</p>
-        <p class="card-text"><span>Hora: </span>{{Lista.hora}}</p>
-        <p class="card-text"><span>Sintomas: </span>{{Lista.sintomas}}</p>
-        <button (click)="eliminarCita(i)" class="btn btn-danger btn-block">ELIMINAR</button>
+<div class="contenedor overflow-auto">
+    <div *ngFor="let Lista of listadoCitas; let i=index" class="card mb-2">
+        <div class="card-body">
+            <p class="card-text"><span>nombre: </span>{{Lista.nombre}}</p>
+            <p class="card-text"><span>Fecha: </span>{{Lista.fecha}}</p>
+            <p class="card-text"><span>Hora: </span>{{Lista.hora}}</p>
+            <p class="card-text"><span>Sintomas: </span>{{Lista.sintomas}}</p>
+            <button (click)="eliminarCita(i)" class="btn btn-danger btn-block">ELIMINAR</button>
+        </div>
     </div>
+
 </div>
