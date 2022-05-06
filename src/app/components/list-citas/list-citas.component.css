@@ -1,0 +1,13 @@
+*{
+    color: var(--colorLetrasBlack);
+}
+.card{
+    margin: 0 40px;
+}
+.btn{
+    width: 100%;
+    color: var(--colorLetrasWhite);
+}
+span{
+    font-weight: 600;
+}

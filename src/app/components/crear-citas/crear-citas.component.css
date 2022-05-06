@@ -1,0 +1,17 @@
+*{
+    color: var(--colorLetrasBlack);
+}
+label{
+    font-weight: 600;
+}
+.btn{
+    width: 100%;
+    color: var(--colorLetrasWhite);
+}
+.card{
+    margin: 0 40px;
+}
+.badge{
+    color: var(--colorLetrasWhite);
+    text-transform: uppercase;
+}

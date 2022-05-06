@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'citasMedicas';
+  listCitas: any[]=[];
+
+  eliminarCitaListado(index:number){
+    this.listCitas.splice(index, 1);
+  }
+
+  agregarCita(cita:any){
+    this.listCitas.push(cita);
+    console.log(this.listCitas);
+    
+  }
 }
